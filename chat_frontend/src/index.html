@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Angular</title>
+  <title>Ocean Chat</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="theme-color" content="#2563EB">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%232563EB' stop-opacity='.9'/%3E%3Cstop stop-color='%23F59E0B' stop-opacity='.9' offset='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect rx='10' ry='10' width='40' height='40' fill='url(%23g)'/%3E%3Ctext x='20' y='25' font-family='Inter, Arial' font-size='14' text-anchor='middle' fill='white' font-weight='bold'%3EOC%3C/text%3E%3C/svg%3E">
+  <script>
+    // Optional runtime-config injection placeholder; set these on hosting if needed.
+    window.__APP_API_BASE__ = window.__APP_API_BASE__ || '/api';
+    window.__APP_WS_URL__ = window.__APP_WS_URL__ || (location.protocol === 'https:' ? `wss://${location.host}/ws` : `ws://${location.host}/ws`);
+  </script>
 </head>
 <body>
   <app-root></app-root>
